@@ -25,8 +25,7 @@ namespace BruteForcePasswordFinder
       var skinManager = MaterialSkinManager.Instance;
       skinManager.AddFormToManage(this);
       skinManager.Theme = MaterialSkinManager.Themes.DARK;
-      skinManager.ColorScheme = new ColorScheme(Primary.LightGreen800, Primary.LightGreen900,
-          Primary.LightGreen500, Accent.LightGreen200, TextShade.WHITE);
+      skinManager.ColorScheme = new ColorScheme(Primary.LightGreen800, Primary.LightGreen900, Primary.LightGreen500, Accent.LightGreen200, TextShade.WHITE);
 
     }
 
@@ -85,8 +84,10 @@ namespace BruteForcePasswordFinder
           result += oneLetter;
         }
       }
+
       return result;
     }
+
     private void MaterialRaisedButton1_Click(object sender, EventArgs e)
     {
       textBox1.Text = " All Matched - Password Found: " + BruteForce();
