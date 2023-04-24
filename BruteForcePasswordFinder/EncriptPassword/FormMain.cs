@@ -52,12 +52,12 @@ namespace BruteForcePasswordFinder
 
     private string BruteForce()
     {
-      string passwordToBeFound = txtPassword.Text;
-      string minuscules = "abcdefghijklmnopqrstuvwxyz";
-      string majuscules = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      string numbers = "0123456789";
-      string specialCharacters = "!@#$%^&*(~[-+:=;'{<>_?/,.|¿¡}'])";
-      string result = string.Empty;
+      var passwordToBeFound = txtPassword.Text;
+      var minuscules = "abcdefghijklmnopqrstuvwxyz";
+      var majuscules = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var numbers = "0123456789";
+      var specialCharacters = "!@#$%^&*(~[-+:=;'{<>_?/,.|¿¡}'])";
+      var result = string.Empty;
       txtResult.Text = "[+][+] Starting BruteForce...";
       passwordToBeFound.Split(new[] { ',' }).ToList<string>();
       for (int eachLetter = 0; eachLetter <= passwordToBeFound.Length - 1; eachLetter++)
